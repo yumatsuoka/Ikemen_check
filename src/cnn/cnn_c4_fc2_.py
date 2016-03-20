@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#python2.7
 
 """
-CNN$B$r:n@.$7$?!#(Bget_image_tensor$B$N%*%V%8%'%/%H$r:n@.$7$F%G!<%?%;%C%H$rFI$_9~$`!#(B
-$BFI$_9~$s$@%G!<%?%;%C%H$r(BCNN$B$KEj$2$k!#(B
-$B#2#0#1#6G/#27n#2#3F|;~E@$G>v$_9~$_AX#1!$%W!<%j%s%0AX#1!"A47k9gAX#1(B
+CNNを作成した。get_image_tensorのオブジェクトを作成してデータセットを読み込む。
+読み込んだデータセットをCNNに投げる。
+２０１６年２月２３日時点で畳み込み層4，プーリング層4、全結合層2
 """
 from __future__ import absolute_import
 from __future__ import division
@@ -21,83 +22,99 @@ class Cnn:
     def __init__(self):
         self.b_conv1 = self.bias_variable([32])
         self.w_conv1 = self.weight_variable([5, 5, 3, 32])
-        self.w_fc1 = self.weight_variable([64 * 64 * 32, 1024])
+        self.b_conv2 = self.bias_variable([64])
+        self.w_conv2 = self.weight_variable([5, 5, 32, 64])
+        self.b_conv3 = self.bias_variable([128])
+        self.w_conv3 = self.weight_variable([5, 5, 64, 128])
+        self.b_conv4 = self.bias_variable([256])
+        self.w_conv4 = self.weight_variable([5, 5, 128, 256])
+        self.w_fc1 = self.weight_variable([8 * 8 * 256, 1024])
         self.b_fc1 = self.bias_variable([1024])
+        self.w_fc2 = self.weight_variable([1024, 1])
+        self.b_fc2 = self.bias_variable([1])
 
     def forward(self):
-        """NN$B$N(Bforword$B=hM}$r9T$&4X?t(B"""
+        """NNのforword処理を行う関数"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
-        h_pool2_flat = tf.reshape(h_pool1, [-1, 64*64*32])
-        h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, self.w_fc1) + self.b_fc1)
-        return h_fc1
+        h_conv2 = tf.nn.relu(self.conv2d(h_pool1, self.w_conv2) + self.b_conv2)
+        h_pool2 = self.max_pool_2x2(h_conv2)
+        h_conv3 = tf.nn.relu(self.conv2d(h_pool2, self.w_conv3) + self.b_conv3)
+        h_pool3 = self.max_pool_2x2(h_conv3)
+        h_conv4 = tf.nn.relu(self.conv2d(h_pool3, self.w_conv4) + self.b_conv4)
+        h_pool4 = self.max_pool_2x2(h_conv4)
+        h_pool4_flat = tf.reshape(h_pool4, [-1, 8 * 8 * 256])
+        h_fc1 = tf.nn.relu(tf.matmul(h_pool4_flat, self.w_fc1) + self.b_fc1)
+        h_fc2 = tf.nn.relu(tf.matmul(h_fc1, self.w_fc2) + self.b_fc2)
+        return h_fc2
 
     def weight_variable(self, shape):
-        """$B=E$_$K;H$&JQ?t$r=i4|2=$9$k4X?t(B"""
+        """重みに使う変数を初期化する関数"""
         initial = tf.truncated_normal(shape, stddev=0.1)
         return tf.Variable(initial)
 
     def bias_variable(self, shape):
-        """$B%P%$%"%9$r=i4|2=$9$k4X?t(B"""
+        """バイアスを初期化する関数"""
         initial = tf.constant(0.1, shape=shape)
         return tf.Variable(initial)
 
     def conv2d(self, x, W):
-        """$B>v$_9~$_7W;;$r9T$&4X?t(B"""
+        """畳み込み計算を行う関数"""
         return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
 
     def max_pool_2x2(self, x):
-        """$B%^%C%/%9%W!<%j%s%0$r9T$&4X?t(B"""
+        """マックスプーリングを行う関数"""
         return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
 if __name__ == '__main__':
     start = time.time()
     logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)-7s %(message)s", filename='log_'+path.splitext(path.basename(__file__))[0]+'.txt')
-    logging.info("---------------------------------------------------")
+    logging.info("------------------------------------------------")
 
     #parameters
     data_list = "/home/yuma/programing/ikemen_check/target/man_target.csv"
     data_dir = "/home/yuma/programing/ikemen_check/image/divide_sex/man/resize/"
     
-    batch_size = 20
+    batch_size = 10
     test_data_num = 2000
-    epoch_size = 30000
+    epoch_size = 3000
     image_size = 128
-    alpha = 1e-4
-    #logging parameter
+    alpha = 1e-6
+
     logging.info("batch_sise:"+str(batch_size)+", epoch_size:"+str(epoch_size)+", alpha:"+str(alpha))
 
-    #$B30It$+$i%G!<%?$rF~$l$kJQ?t$r:n@.(B
+    #外部からデータを入れる変数を作成
     x = tf.placeholder("float", shape=[None, 3 * image_size * image_size])
     y_ = tf.placeholder("float", shape=[None, 1])
 
     print("creating input_data...")
     logging.info("creating input_data...")
-    #$B%G!<%?%;%C%H$r<hF@$9$k!#65;U%G!<%?$N(Bcsv$B$H2hA|%U%)%k%@$N>l=j$H%P%C%A%5%$%:$H3X=,$K;H$&2hA|?t$,0z?t(B
+    #データセットを取得する。教師データのcsvと画像フォルダの場所とバッチサイズと学習に使う画像数が引数
     input_data = get_image_tensor.Input_data(data_list, data_dir, batch_size, test_data_num)
     #############
 
     print("creating cnn...")
-    logging.info("createing cnn...")
-    #cnn$B$N%*%V%8%'%/%H$r:n@.(B
+    logging.info("creating cnn...")
+    #cnnのオブジェクトを作成
     cnn = Cnn()
-
-    #loss
+    
+    #loss=cross_entropy
+    #loss = -tf.reduce_sum(y_ * tf.log(cnn.forward()))
+    #loss = (y_ - y) **2
     loss = tf.reduce_sum(tf.pow(y_ - cnn.forward(), 2) * 0.5)
     train_step = tf.train.AdagradOptimizer(alpha).minimize(loss)
-
-    #initialize_valiables
+    
     sess = tf.InteractiveSession()
     sess.run(tf.initialize_all_variables())
-
+    
     print(" training dataset...")
     logging.info("training dataset...")
     for i in range(1, epoch_size+1):
         batch_x, batch_y = input_data.next_batch()
         train_step.run(feed_dict={x: batch_x, y_: batch_y })
         if i%100 == 0:
-            #print("per100epoch loss:", sess.run(loss, feed_dict={x: batch_x    , y_: batch_y}))
+            #print("per100epoch loss:", sess.run(loss, feed_dict={x: batch_x, y_: batch_y}))
             train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y})/batch_size
             print("epoch:%d average_loss:%f"%(i, train_output))
             logging.info("epoch,"+str(i)+", average_loss,"+str(train_output))

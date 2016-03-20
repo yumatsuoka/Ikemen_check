@@ -1,4 +1,9 @@
-#IkemenCheck:Regression with CNN(Convolutional Neural Networks)
+#IkemenCheck:Regression with CNN
+##Abstract
+regression with Convolutional Neural Networks using TensorFlow
+creating datasets with OpenCV
+I have to refactoring "CNN using TensorFlow" source codes
+
 ##Requirements
 -Python 2.x (checked Python 2.7.6)
 
