@@ -17,6 +17,7 @@ import datetime
 import time
 import logging
 from os import path
+import sys
 
 class Cnn:
     def __init__(self):
@@ -73,11 +74,12 @@ if __name__ == '__main__':
     data_list = "/home/yuma/programing/ikemen_check/target/man_target.csv"
     data_dir = "/home/yuma/programing/ikemen_check/image/divide_sex/man/resize/"
 
-    batch_size = 20
+    param = sys.argv
+    batch_size = int(param[1])
     test_data_num = 2000
-    epoch_size = 30000
+    epoch_size = 10000
     image_size = 128
-    alpha = 5e-5 
+    alpha = float(param[2])
 
     logging.info("batch_sise:"+str(batch_size)+", epoch_size:"+str(epoch_size)+", alpha:"+str(alpha))
  
