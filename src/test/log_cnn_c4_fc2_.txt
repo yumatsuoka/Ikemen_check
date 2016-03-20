@@ -1,0 +1,569 @@
+2016-02-27 01:42:30,317 INFO    ------------------------------------------------
+2016-02-27 01:42:30,317 INFO    batch_sise:20, epoch_size:30000, alpha:5e-05
+2016-02-27 01:42:30,318 INFO    creating input_data...
+2016-02-27 01:44:47,565 INFO    ------------------------------------------------
+2016-02-27 01:44:47,565 INFO    batch_sise:20, epoch_size:30000, alpha:5e-05
+2016-02-27 01:44:47,566 INFO    creating input_data...
+2016-02-27 01:47:37,591 INFO    creating cnn...
+2016-02-27 01:47:38,645 INFO    training dataset...
+2016-02-27 01:47:50,201 INFO    epoch,100, average_loss,1124.825
+2016-02-27 01:47:56,347 INFO    epoch,200, average_loss,1124.825
+2016-02-27 01:48:02,495 INFO    epoch,300, average_loss,1124.825
+2016-02-27 01:48:08,709 INFO    epoch,400, average_loss,1124.825
+2016-02-27 01:48:14,912 INFO    epoch,500, average_loss,1124.825
+2016-02-27 01:48:21,120 INFO    epoch,600, average_loss,1124.825
+2016-02-27 01:48:27,333 INFO    epoch,700, average_loss,1124.825
+2016-02-27 01:48:33,570 INFO    epoch,800, average_loss,1124.825
+2016-02-27 01:48:39,815 INFO    epoch,900, average_loss,1124.825
+2016-02-27 01:48:46,057 INFO    epoch,1000, average_loss,1124.825
+2016-02-27 01:48:52,310 INFO    epoch,1100, average_loss,1124.825
+2016-02-27 01:48:58,545 INFO    epoch,1200, average_loss,1124.825
+2016-02-27 01:49:04,803 INFO    epoch,1300, average_loss,1124.825
+2016-02-27 01:49:11,043 INFO    epoch,1400, average_loss,1124.825
+2016-02-27 01:49:17,280 INFO    epoch,1500, average_loss,1124.825
+2016-02-27 01:49:23,525 INFO    epoch,1600, average_loss,1124.825
+2016-02-27 01:49:29,770 INFO    epoch,1700, average_loss,1124.825
+2016-02-27 01:49:36,020 INFO    epoch,1800, average_loss,1124.825
+2016-02-27 01:49:42,278 INFO    epoch,1900, average_loss,1124.825
+2016-02-27 01:49:48,535 INFO    epoch,2000, average_loss,1124.825
+2016-02-27 01:49:54,777 INFO    epoch,2100, average_loss,1124.825
+2016-02-27 01:50:01,031 INFO    epoch,2200, average_loss,1124.825
+2016-02-27 01:50:07,272 INFO    epoch,2300, average_loss,1124.825
+2016-02-27 01:50:13,612 INFO    epoch,2400, average_loss,1124.825
+2016-02-27 01:50:19,971 INFO    epoch,2500, average_loss,1124.825
+2016-02-27 01:50:26,301 INFO    epoch,2600, average_loss,1124.825
+2016-02-27 01:50:32,566 INFO    epoch,2700, average_loss,1124.825
+2016-02-27 01:50:38,831 INFO    epoch,2800, average_loss,1124.825
+2016-02-27 01:50:45,102 INFO    epoch,2900, average_loss,1124.825
+2016-02-27 01:50:51,361 INFO    epoch,3000, average_loss,1124.825
+2016-02-27 01:50:57,624 INFO    epoch,3100, average_loss,1124.825
+2016-02-27 01:51:03,889 INFO    epoch,3200, average_loss,1124.825
+2016-02-27 01:51:10,135 INFO    epoch,3300, average_loss,1124.825
+2016-02-27 01:51:16,392 INFO    epoch,3400, average_loss,1124.825
+2016-02-27 01:51:47,431 INFO    ------------------------------------------------
+2016-02-27 01:51:47,431 INFO    batch_sise:20, epoch_size:30000, alpha:1e-05
+2016-02-27 01:51:47,433 INFO    creating input_data...
+2016-02-27 01:54:37,896 INFO    creating cnn...
+2016-02-27 01:54:38,960 INFO    training dataset...
+2016-02-27 01:54:50,535 INFO    epoch,100, average_loss,1124.825
+2016-02-27 01:54:56,746 INFO    epoch,200, average_loss,1124.825
+2016-02-27 01:55:02,963 INFO    epoch,300, average_loss,1124.825
+2016-02-27 01:55:09,164 INFO    epoch,400, average_loss,1124.825
+2016-02-27 01:55:15,375 INFO    epoch,500, average_loss,1124.825
+2016-02-27 01:55:21,602 INFO    epoch,600, average_loss,1124.825
+2016-02-27 01:55:27,845 INFO    epoch,700, average_loss,1124.825
+2016-02-27 01:55:34,080 INFO    epoch,800, average_loss,1124.825
+2016-02-27 01:55:40,332 INFO    epoch,900, average_loss,1124.825
+2016-02-27 01:55:46,564 INFO    epoch,1000, average_loss,1124.825
+2016-02-27 01:55:52,808 INFO    epoch,1100, average_loss,1124.825
+2016-02-27 01:55:59,061 INFO    epoch,1200, average_loss,1124.825
+2016-02-27 01:56:05,314 INFO    epoch,1300, average_loss,1124.825
+2016-02-27 01:56:11,554 INFO    epoch,1400, average_loss,1124.825
+2016-02-27 01:56:17,803 INFO    epoch,1500, average_loss,1124.825
+2016-02-27 01:56:24,062 INFO    epoch,1600, average_loss,1124.825
+2016-02-27 01:56:30,450 INFO    epoch,1700, average_loss,1124.825
+2016-02-27 01:56:36,854 INFO    epoch,1800, average_loss,1124.825
+2016-02-27 01:56:43,217 INFO    epoch,1900, average_loss,1124.825
+2016-02-27 01:56:49,519 INFO    epoch,2000, average_loss,1124.825
+2016-02-27 01:56:55,778 INFO    epoch,2100, average_loss,1124.825
+2016-02-27 01:57:02,040 INFO    epoch,2200, average_loss,1124.825
+2016-02-27 01:57:08,307 INFO    epoch,2300, average_loss,1124.825
+2016-02-27 01:57:14,576 INFO    epoch,2400, average_loss,1124.825
+2016-02-27 01:57:20,839 INFO    epoch,2500, average_loss,1124.825
+2016-02-27 01:57:27,106 INFO    epoch,2600, average_loss,1124.825
+2016-02-27 01:57:33,373 INFO    epoch,2700, average_loss,1124.825
+2016-02-27 01:59:31,889 INFO    ------------------------------------------------
+2016-02-27 01:59:31,889 INFO    batch_sise:20, epoch_size:30000, alpha:0.0001
+2016-02-27 01:59:31,890 INFO    creating input_data...
+2016-02-27 02:01:57,609 INFO    creating cnn...
+2016-02-27 02:01:58,370 INFO    training dataset...
+2016-02-27 02:02:16,874 INFO    epoch,100, average_loss,1124.825
+22016-02-27 02:04:26,571 INFO    epoch,200, average_loss,5550828.2016-02-27 02:02:28,127 INFO    epoch,300, average_loss,1124.825
+2016-02-27 02:02:33,797 INFO    epoch,400, average_loss,1124.825
+2016-02-27 02:02:39,471 INFO    epoch,500, average_loss,1124.825
+2016-02-27 02:02:45,141 INFO    epoch,600, average_loss,1124.825
+2016-02016-02-27 02:04:57,718 INFO    epoch,700, average_loss,4634710.8
+2016-02-27 02:05:03,984 INFO    epoch,800, average_loss,4505041.2
+27 02:03:02,167 INFO    epoch,900, average_loss,1124.825
+2016-02-27 02:05:10,234 INFO    epoch,900, average_loss,4384482.8
+2016-02-27 02:05:16,494 INFO    epoch,1000, average_loss,4272447.6
+2016-02-27 02:05:22,741 INFO    epoch,1100, average_loss,4167492.0
+2016-02-27 02:05:29,004 INFO    epoch,1200, average_loss,4068960.8
+2016-02-27 02:05:35,277 INFO    epoch,1300, average_loss,3975734.0
+2016-02-27 02:05:41,531 INFO    epoch,1400, average_loss,3887712.0
+2016-02-27 02:05:48,022 INFO    epoch,1500, average_loss,3803717.2
+2016-02-27 02:05:54,530 INFO    epoch,1600, average_loss,3723942.0
+2016-02-27 02:06:00,921 INFO    epoch,1700, average_loss,3647419.6
+2016-02-27 02:06:07,314 INFO    epoch,1800, average_loss,3574612.8
+2016-02-27 02:06:13,646 INFO    epoch,1900, average_loss,3504358.8
+2016-02-27 02:06:19,977 INFO    epoch,2000, average_loss,3437122.0
+2016-02-27 02:06:26,313 INFO    epoch,2100, average_loss,3371880.4
+2016-02-27 02:04:47,124 INFO    ------------------------------------------------
+2016-02-27 02:04:47,124 INFO    batch_sise:20, epoch_size:30000, alpha:1e-07
+2016-02-27 02:04:47,125 INFO    creating input_data...
+2:06:51,618 INFO    epoch,2500, average_loss,3133663.4
+2016-02-27 02:06:57,933 INFO    epoch,2600, average_loss,3078985.0
+2016-02-27 02:07:04,251 INFO    epoch,2700, average_loss,3026137.8
+2016-02-27 02:07:10,573 INFO    epoch,2800, average_loss,2974468.6
+2016-02-27 02:07:16,910 INFO    epoch,2900, average_loss,2924452.0
+2016-02-27 02:07:23,233 INFO    epoch,3000, average_loss,2875891.2
+2016-02-27 02:07:29,558 INFO    epoch,3100, average_loss,2828814.6
+2016-02-27 02:07:35,858 INFO    epoch,3200, average_loss,2782801.8
+2016-02-27 02:07:42,104 INFO    epoch,3300, average_loss,2737801.2
+2016-02-27 02:07:48,377 INFO    epoch,3400, average_loss,2694193.2
+2016-02-27 02:07:54,646 INFO    epoch,3500, average_loss,2651916.4
+2016-02-27 02:08:00,912 INFO    epoch,3600, average_loss,2610605.2
+2016-02-27 02:08:07,203 INFO    epoch,3700, average_loss,2570482.4
+2016-02-27 02:08:13,475 INFO    epoch,3800, average_loss,2531101.4
+2016-02-27 02:08:19,751 INFO    epoch,3900, average_loss,2492510.2
+2016-02-27 02:08:26,038 INFO    epoch,4000, average_loss,2455105.0
+2016-02-27 02:08:32,314 INFO    epoch,4100, average_loss,2418425.0
+2016-02-27 02:08:38,578 INFO    epoch,4200, average_loss,2382811.2
+2016-02-27 02:08:44,840 INFO    epoch,4300, average_loss,2347903.4
+2016-02-27 02:08:51,091 INFO    epoch,4400, average_loss,2313983.8
+2016-02-27 02:08:57,355 INFO    epoch,4500, average_loss,2280711.2
+2016-02-27 02:09:03,634 INFO    epoch,4600, average_loss,2247865.2
+2016-02-27 02:07:13,371 INFO    creating cnn...
+2016-02-27 02:07:14,130 INFO    training dataset...
+2016-02-27 02:07:19,974 INFO    epoch,100, average_loss,1124.825
+2016-02-27 02:07:25,607 INFO    epoch,200, average_loss,1124.825
+2016-02-27 02:07:31,280 INFO    epoch,300, average_loss,1124.825
+2016-02-27 02:07:36,956 INFO    epoch,402016-02-27 02:09:41,251 INFO    epoch,5200, average_loss,2065151.8
+2016-02-27 02:09:47,528 INFO    epoch,5300, average_loss,2037078.0
+2016-02-27 02:09:53,792 INFO    epoch,5400, average_loss,2009488.2
+2016-02-27 02:10:00,071 INFO    epoch,5500, average_loss,1982371.4
+2016-02-27 02:10:06,341 INFO    epoch,5600, average_loss,1955534.0
+2016-02-27 02:10:12,611 INFO    epoch,5700, average_loss,1929028.4
+2016-02-27 02:10:18,881 INFO    epoch,5800, average_loss,1902973.2
+2016-02-27 02:10:25,151 INFO    epoch,5900, average_loss,1877668.4
+2016-02-27 02:10:31,422 INFO    epoch,6000, average_loss,1852740.6
+2016-02-27 02:10:37,680 INFO    epoch,6100, average_loss,1828255.4
+2016-02-27 02:10:43,947 INFO    epoch,6200, average_loss,1804267.0
+2016-02-27 02:10:50,209 INFO    epoch,6300, average_loss,1780899.4
+2016-02-27 02:10:56,468 INFO    epoch,6400, average_loss,1757783.2
+2016-02-27 02:11:02,724 INFO    epoch,6500, average_loss,1735094.0
+2016-02-27 02:11:09,003 INFO    epoch,6600, average_loss,1713010.2
+2016-02-27 02:11:15,261 INFO    epoch,6700, average_loss,1691233.8
+2016-02-27 02:11:21,535 INFO    epoch,6800, average_loss,1669803.1
+2016-02-27 02:11:27,800 INFO    epoch,6900, average_loss,1648615.4
+2016-02-27 02:11:34,068 INFO    epoch,7000, average_loss,1627679.5
+2016-02-27 02:11:40,346 INFO    epoch,7100, average_loss,1606979.7
+2016-02-27 02:11:46,631 INFO    epoch,7200, average_loss,1586675.1
+2016-02-27 02:11:52,889 INFO    epoch,7300, average_loss,1566558.4
+2016-02-27 02:11:59,167 INFO    epoch,7400, average_loss,1547024.4
+2016-02-27 02:12:05,433 INFO    epoch,7500, average_loss,1527725.9
+2016-02-27 02:12:11,708 INFO    epoch,7600, average_loss,1508783.8
+2016-02-27 02:12:17,972 INFO    epoch,7700, average_loss,1490060.0
+2016-02-27 02:12:24,240 INFO    epoch,7800, average_loss,1471672.1
+2016-02-27 02:12:30,509 INFO    epoch,7900, average_loss,1453749.6
+2016-02-27 02:12:36,774 INFO    epoch,8000, average_loss,1436036.2
+2016-02-27 02:12:43,045 INFO    epoch,8100, average_loss,1418605.4
+2016-02-27 02:12:49,319 INFO    epoch,8200, average_loss,1401365.0
+2016-02-27 02:12:55,588 INFO    epoch,8300, average_loss,1384466.0
+2016-02-27 02:13:01,859 INFO    epoch,8400, average_loss,1367897.5
+2016-02-27 02:13:08,119 INFO    epoch,8500, average_loss,1351565.1
+2016-02-27 02:13:14,389 INFO    epoch,8600, average_loss,1335462.2
+2016-02-27 02:13:20,674 INFO    epoch,8700, average_loss,1319588.5
+2016-02-27 02:13:26,938 INFO    epoch,8800, average_loss,1303828.5
+2016-02-27 02:13:33,206 INFO    epoch,8900, average_loss,1288222.6
+2016-02-27 02:13:39,475 INFO    epoch,9000, average_loss,1272761.3
+2016-02-27 02:13:45,747 INFO    epoch,9100, average_loss,1257468.3
+2016-02-27 02:13:52,020 INFO    epoch,9200, average_loss,1242417.6
+2016-02-27 02:13:58,276 INFO    epoch,9300, average_loss,1227537.8
+2016-02-27 02:14:04,552 INFO    epoch,9400, average_loss,1212873.9
+2016-02-27 02:14:10,818 INFO    epoch,9500, average_loss,1198610.6
+2016-02-27 02:14:17,087 INFO    epoch,9600, average_loss,1184518.2
+2016-02-27 02:12:39,880 INFO    ------------------------------------------------
+2016-02-27 02:12:39,880 INFO    batch_sise:20, epoch_size:30000, alpha:5e-05
+2016-02-27 02:12:39,881 INFO    creating input_data...
+2:14:42,150 INFO    epoch,10000, average_loss,1129962.3
+2016-02-27 02:14:48,428 INFO    epoch,10100, average_loss,1116866.6
+2016-02-27 02:14:54,698 INFO    epoch,10200, average_loss,1104047.4
+2016-02-27 02:15:00,969 INFO    epoch,10300, average_loss,1091354.2
+2016-02-27 02:15:07,228 INFO    epoch,10400, average_loss,1078802.3
+2016-02-27 02:15:13,489 INFO    epoch,10500, average_loss,1066487.3
+2016-02-27 02:15:19,746 INFO    epoch,10600, average_loss,1054294.8
+2016-02-27 02:15:26,017 INFO    epoch,10700, average_loss,1042213.9
+2016-02-27 02:15:32,282 INFO    epoch,10800, average_loss,1030367.9
+2016-02-27 02:15:38,549 INFO    epoch,10900, average_loss,1018849.7
+2016-02-27 02:15:44,819 INFO    epoch,11000, average_loss,1007447.5
+2016-02-27 02:15:51,089 INFO    epoch,11100, average_loss,996154.3
+2016-02-27 02:15:57,356 INFO    epoch,11200, average_loss,985019.6
+2016-02-27 02:16:03,622 INFO    epoch,11300, average_loss,974026.2
+2016-02-27 02:16:09,902 INFO    epoch,11400, average_loss,963143.1
+2016-02-27 02:16:16,157 INFO    epoch,11500, average_loss,952368.0
+2016-02-27 02:16:22,416 INFO    epoch,11600, average_loss,941675.2
+2016-02-27 02:16:28,686 INFO    epoch,11700, average_loss,931086.2
+2016-02-27 02:16:34,953 INFO    epoch,11800, average_loss,920574.5
+2016-02-27 02:16:41,224 INFO    epoch,11900, average_loss,910142.3
+2016-02-27 02:16:47,504 INFO    epoch,12000, average_loss,899856.8
+2016-02-27 02:16:53,765 INFO    epoch,12100, average_loss,889706.1
+2016-02-27 02:15:06,756 INFO    creating cnn...
+2016-02-27 02:15:07,513 INFO    training dataset...
+2016-02-27 02:15:18,471 INFO    epoch,100, average_loss,1124.825
+2016-02-27 02:15:24,098 INFO    epoch,200, average_loss,1124.825
+   epoch,12500, average_loss,850311.0
+2016-02-27 02:17:25,093 INFO    epoch,12600, average_loss,840949.3
+2016-02-27 02:17:31,377 INFO    epoch,12700, average_loss,831683.7
+2016-02-27 02:17:37,645 INFO    epoch,12800, average_loss,822522016-02-27 02:15:41,125 INFO    epoch,500, average_loss,1124.825
+2016-02-27 02:15:46,801 INFO    epoch,600, average_loss,1124.825
+2016-02-27 02:15:52,479 INFO    epoch,700, average_loss,1124.825
+2016-02-27 2016-02-27 02:18:02,707 INFO    epoch,13200, average_loss,786867.85
+2016-02-27 02:18:08,977 INFO    epoch,13300, average_loss,778202.05
+2016-02-27 02:18:15,264 INFO    epoch,13400, aver2016-02-27 02:16:15,193 INFO    epoch,1100, average_loss,1124.825
+2016-02-27 02:16:20,871 INFO    epoch,1200, average_loss,1124.825
+2016-02-27 02:16:26,5472016-02-27 02:18:34,076 INFO    epoch,13700, average_loss,744928.6
+2016-02-27 02:18:40,337 INFO    epoch,13800, average_loss,736928.95
+2016-02-27 02:18:46,598 INFO    epoch,13900, average_loss,728988.5
+2016-02-27 02:18:52,869 INFO    epoch,14000, average_loss,721131.7
+2016-02-27 02:18:59,143 INFO    epoch,14100, average_loss,713396.8
+   epoch,1800, average_loss,1124.825
+2016-02-27 02:19:05,414 INFO    epoch,14200, average_loss,705733.95
+2016-02-27 02:19:11,688 INFO    epoch,14300, average_loss,698175.95
+2016-02-27 02:19:17,953 INFO    epoch,14400, average_loss,690659.1
+2016-02-27 02:19:24,229 INFO    epoch,14500, average_loss,683235.75
+2016-02-27 02:19:30,504 INFO    epoch,14600, average_loss,675937.25
+2016-02-27 02:19:36,773 INFO    epoch,14700, average_loss,668863.1
+2016-02-27 02:19:43,054 INFO    epoch,14800, average_loss,661830.9
+2016-02-27 02:19:49,327 INFO    epoch,14900, average_loss,654889.9
+2016-02-27 02:19:55,587 INFO    epoch,15000, average_loss,647991.5
+2016-02-27 02:20:01,848 INFO    epoch,15100, average_loss,641176.75
+2016-02-27 02:18:17,327 INFO    ------------------------------------------------
+2016-02-27 02:18:17,327 INFO    batch_sise:40, epoch_size:30000, alpha:1e-07
+2016-02-27 02:18:17,329 INFO    creating input_data...
+2:20:26,943 INFO    epoch,15500, average_loss,614694.4
+2016-02-27 02:20:33,210 INFO    epoch,15600, average_loss,608214.3
+2016-02-27 02:20:39,474 INFO    epoch,15700, average_loss,601799.6
+2016-02-27 02:20:45,738 INFO    epoch,15800, average_loss,595438.2
+2016-02-27 02:20:51,996 INFO    epoch,15900, average_loss,589119.2
+2016-02-27 02:20:58,259 INFO    epoch,16000, average_loss,582843.3
+2016-02-27 02:21:04,529 INFO    epoch,16100, average_loss,576629.3
+2016-02-27 02:21:10,793 INFO    epoch,16200, average_loss,570449.1
+2016-02-27 02:21:17,063 INFO    epoch,16300, average_loss,564329.05
+2016-02-27 02:21:23,333 INFO    epoch,16400, average_loss,558281.25
+2016-02-27 02:21:29,594 INFO    epoch,16500, average_loss,552274.55
+2016-02-27 02:21:35,861 INFO    epoch,16600, average_loss,546377.95
+2016-02-27 02:21:42,125 INFO    epoch,16700, average_loss,540534.25
+2016-02-27 02:21:48,395 INFO    epoch,16800, average_loss,534726.45
+2016-02-27 02:21:54,668 INFO    epoch,16900, average_loss,528981.6
+2016-02-27 02:22:00,940 INFO    epoch,17000, average_loss,523303.05
+2016-02-27 02:22:07,195 INFO    epoch,17100, average_loss,517671.95
+2016-02-27 02:22:13,463 INFO    epoch,17200, average_loss,512125.6
+2016-02-27 02:22:19,726 INFO    epoch,17300, average_loss,506746.9
+2016-02-27 02:20:43,798 INFO    creating cnn...
+2016-02-27 02:20:44,571 INFO    training dataset...
+poch,17500, average_loss,496222.45
+2016-02-27 02:22:38,523 INFO    epoch,17600, average_loss,491018.75
+2016-02-27 02:22:44,801 INFO    epoch,17700, average_loss,485890.85
+2016-02-27 02:22:51,064 INFO    epoch,17800, average_loss,480783.1
+2016-02-27 02:22:57,327 INFO    epoch,17900, average_loss,475702.65
+2016-02-27 02:23:03,603 INFO    epoch,18000, average_loss,4707242016-02-27 02:21:15,398 INFO    epoch,300, average_loss,9737012.8
+0.25
+2016-02-27 02:23:16,149 INFO    epoch,18200, average_loss,460927.85
+2016-02-27 02:23:22,407 INFO    epoch,18300, average_loss,456086.8
+2016-02-27 02:23:28,679 INFO    epoch,18400, average_loss,451306.85
+2016-02-27 02:23:34,949 INFO    epoch,18500, average_loss,4465692016-02-27 02:21:46,111 INFO    epoch,600, average_loss,9645436.8
+65.0
+2016-02-27 02:23:47,488 INFO    epoch,18700, average_loss,437216.1
+2016-02-27 02:23:53,777 INFO    epoch,18800, average_loss,432684.25
+2016-02-27 02:24:00,049 INFO    epoch,18900, average_loss,428266.4
+2016-02-27 02:24:06,326 INFO    epoch,19000, average_loss,423918.2016-02-27 02:22:16,835 INFO    epoch,900, average_loss,9572688.0
+1.7
+2016-02-27 02:24:18,859 INFO    epoch,19200, average_loss,415350.375
+2016-02-27 02:24:25,129 INFO    epoch,19300, average_loss,411108.2
+2016-02-27 02:24:31,400 INFO    epoch,19400, average_loss,406917.3
+2016-02-27 02:24:37,663 INFO    epoch,19500, average_loss,402759.672016-02-27 02:22:47,560 INFO    epoch,1200, average_loss,9513472.0
+35
+2016-02-27 02:24:50,186 INFO    epoch,19700, average_loss,394558.625
+2016-02-27 02:24:56,459 INFO    epoch,19800, average_loss,390564.425
+2016-02-27 02:25:02,724 INFO    epoch,19900, average_loss,386581.225
+2016-02-27 02:25:08,995 INFO    epoch,20000, average_loss,382643.2016-02-27 02:23:18,294 INFO    epoch,1500, average_loss,9461434.4
+1.925
+2016-02-27 02:25:21,542 INFO    epoch,20200, average_loss,374878.3
+2016-02-27 02:25:27,818 INFO    epoch,20300, average_loss,371055.025
+2016-02-27 02:25:34,080 INFO    epoch,20400, average_loss,367253.35
+2016-02-27 02:25:40,348 INFO    epoch,20500, average_loss,363498.125
+2016-02-27 02:25:46,629 INFO    epoch,20600, average_loss,359798.7
+2016-02-27 02:25:52,898 INFO    epoch,20700, average_loss,356214.925
+2016-02-27 02:25:59,167 INFO    epoch,20800, average_loss,352707.85
+2016-02-27 02:24:28,267 INFO    ------------------------------------------------
+2016-02-27 02:24:28,267 INFO    batch_sise:40, epoch_size:30000, alpha:1e-06
+2016-02-27 02:24:28,268 INFO    creating input_data...
+2:26:24,269 INFO    epoch,21200, average_loss,338982.725
+2016-02-27 02:26:30,548 INFO    epoch,21300, average_loss,335615.6
+2016-02-27 02:26:36,805 INFO    epoch,21400, average_loss,332294.95
+2016-02-27 02:26:43,058 INFO    epoch,21500, average_loss,328987.325
+2016-02-27 02:26:49,325 INFO    epoch,21600, average_loss,325708.475
+2016-02-27 02:26:55,599 INFO    epoch,21700, average_loss,322491.725
+2016-02-27 02:27:01,875 INFO    epoch,21800, average_loss,319303.75
+2016-02-27 02:27:08,142 INFO    epoch,21900, average_loss,316154.575
+2016-02-27 02:27:14,416 INFO    epoch,22000, average_loss,313016.35
+2016-02-27 02:27:20,680 INFO    epoch,22100, average_loss,309912.85
+2016-02-27 02:27:26,948 INFO    epoch,22200, average_loss,306828.75
+2016-02-27 02:27:33,221 INFO    epoch,22300, average_loss,303777.85
+2016-02-27 02:27:39,488 INFO    epoch,22400, average_loss,300746.775
+2016-02-27 02:27:45,761 INFO    epoch,22500, average_loss,297736.1
+2016-02-27 02:27:52,018 INFO    epoch,22600, average_loss,294738.35
+2016-02-27 02:27:58,293 INFO    epoch,22700, average_loss,291776.55
+2016-02-27 02:28:04,559 INFO    epoch,22800, average_loss,288827.0
+2016-02-27 02:28:10,825 INFO    epoch,22900, average_loss,285888.975
+2016-02-27 02:28:17,108 INFO    epoch,23000, average_loss,282984.575
+2016-02-27 02:28:23,366 INFO    epoch,23100, average_loss,280105.25
+2016-02-27 02:28:29,625 INFO    epoch,23200, average_loss,277234.6
+2016-02-27 02:28:35,894 INFO    epoch,23300, average_loss,274392.225
+2016-02-27 02:26:54,271 INFO    creating cnn...
+2016-02-27 02:26:55,036 INFO    training dataset...
+epoch,23500, average_loss,268773.85
+2016-02-27 02:28:54,722 INFO    epoch,23600, average_loss,265999.075
+2016-02-27 02:29:01,009 INFO    epoch,23700, average_loss,263241.875
+2016-02-27 02:29:07,274 INFO    epoch,23800, average_loss,260515.325
+2016-02-27 02:29:13,549 INFO    epoch,23900, average_loss,257816.2
+2016-02-27 02:29:19,820 INFO    epoch,24000, average_loss,255147.875
+22016-02-27 02:27:30,914 INFO    epoch,300, average_loss,25485.171875
+16-02-27 02:29:32,367 INFO    epoch,24200, average_loss,249910.925
+2016-02-27 02:29:38,638 INFO    epoch,24300, average_loss,247320.475
+2016-02-27 02:29:44,904 INFO    epoch,24400, average_loss,244761.375
+2016-02-27 02:29:51,177 INFO    epoch,24500, average_loss,242214.9752016-02-27 02:28:01,603 INFO    epoch,600, average_loss,8727.72265625
+16-02-27 02:30:03,697 INFO    epoch,24700, average_loss,237196.05
+2016-02-27 02:30:09,969 INFO    epoch,24800, average_loss,234717.425
+2016-02-27 02:30:16,243 INFO    epoch,24900, average_loss,232263.8
+2016-02-27 02:30:22,526 INFO    epoch,25000, average_loss,229827.7
+2012016-02-27 02:28:32,310 INFO    epoch,900, average_loss,3302.99570313
+-02-27 02:30:35,074 INFO    epoch,25200, average_loss,225110.85
+2016-02-27 02:30:41,350 INFO    epoch,25300, average_loss,222858.725
+2016-02-27 02:30:47,624 INFO    epoch,25400, average_loss,220624.2
+2016-02-27 02:30:53,899 INFO    epoch,25500, average_loss,218421.725
+2016-02016-02-27 02:29:03,024 INFO    epoch,1200, average_loss,1360.31503906
+2016-02-27 02:29:13,271 INFO    epoch,1300, average_loss,1037.68925781
+:31:12,714 INFO    epoch,25800, average_loss,211912.125
+2016-02-27 02:31:18,978 INFO    epoch,25900, average_loss,209778.525
+202016-02-27 02:29:33,750 INFO    epoch,1500, average_loss,637.553564453
+2016-02-27 02:29:43,990 INFO    epoch,1600, average_loss,511.182421875
+02-27 02:31:37,779 INFO    epoch,26200, average_loss,203496.6375
+2016-02-27 02:31:44,048 INFO    epoch,26300, average_loss,201428.35
+2016-02-27 02:31:50,328 INFO    epoch,26400, average_loss,199384.35
+2012016-02-27 02:30:04,474 INFO    epoch,1800, average_loss,357.868237305
+2016-02-27 02:30:14,716 INFO    epoch,1900, average_loss,313.250952148
+2-27 02:32:09,126 INFO    epoch,26700, average_loss,193416.05
+2016-02-27 02:32:15,386 INFO    epoch,26800, average_loss,191471.0
+2016-02-27 02:32:21,661 INFO    epoch,26900, average_loss,189539.5875
+22016-02-27 02:30:35,206 INFO    epoch,2100, average_loss,251.153710937
+2016-02-27 02:30:45,442 INFO    epoch,2200, average_loss,231.676318359
+27 02:32:40,452 INFO    epoch,27200, average_loss,183844.35
+2016-02-27 02:32:46,727 INFO    epoch,27300, average_loss,181985.5
+2016-02-27 02:32:53,001 INFO    epoch,27400, average_loss,180139.9
+20162016-02-27 02:31:05,934 INFO    epoch,2400, average_loss,207.523583984
+2016-02-27 02:31:16,172 INFO    epoch,2500, average_loss,201.244128418
+-27 02:33:11,806 INFO    epoch,27700, average_loss,174678.45
+2016-02-27 02:33:18,069 INFO    epoch,27800, average_loss,172899.0625
+2016-02-27 02:33:24,336 INFO    epoch,27900, average_loss,171134.8625
+22016-02-27 02:31:36,671 INFO    epoch,2700, average_loss,192.429650879
+2016-02-27 02:31:46,910 INFO    epoch,2800, average_loss,189.351342773
+6-02-27 02:33:43,131 INFO    epoch,28200, average_loss,166136.8625
+2016-02-27 02:33:49,402 INFO    epoch,28300, average_loss,164549.675
+2016-02-27 02:33:55,666 INFO    epoch,28400, average_loss,162958.4125
+22016-02-27 02:32:07,407 INFO    epoch,3000, average_loss,185.308068848
+2016-02-27 02:32:17,722 INFO    epoch,3100, average_loss,184.322424316
+-02-27 02:34:14,464 INFO    epoch,28700, average_loss,158292.875
+2016-02-27 02:34:20,729 INFO    epoch,28800, average_loss,156757.175
+2016-02-27 02:32:28,052 INFO    epoch,3200, average_loss,183.504589844
+2016-02-27 02:32:38,309 INFO    epoch,3300, average_loss,182.779003906
+2016-02-27 02:32:48,642 INFO    epoch,3400, average_loss,182.171533203
+2-27 02:34:45,824 INFO    epoch,29200, average_loss,150777.1875
+2016-02-27 02:34:52,089 INFO    epoch,29300, average_loss,149312.5
+2016-02-27 02:34:58,363 INFO    epoch,29400, average_loss,147846.7
+20162016-02-27 02:33:09,217 INFO    epoch,3600, average_loss,181.09921875
+2016-02-27 02:33:19,491 INFO    epoch,3700, average_loss,180.614318848
+ 02:35:17,165 INFO    epoch,29700, average_loss,143554.0125
+2016-02-27 02:35:23,440 INFO    epoch,29800, average_loss,142168.3
+2016-02-27 02:33:29,825 INFO    epoch,3800, average_loss,180.187524414
+-02-27 02:35:35,991 INFO    epoch,30000, average_loss,139435.4125
+2016-02-27 02:35:36,009 INFO    test average_loss,4793128.0
+2016-02-27 02:35:36,010 INFO    end:2016-02-27 02:35:36
+2016-02-27 02:35:36,010 INFO    elapsed_time2069.17785501[sec]
+2016-02-27 02:33:40,153 INFO    epoch,3900, average_loss,179.803076172
+2016-02-27 02:33:50,490 INFO    epoch,4000, average_loss,179.501147461
+2016-02-27 02:34:00,804 INFO    epoch,4100, average_loss,179.305859375
+2016-02-27 02:34:11,135 INFO    epoch,4200, average_loss,179.14987793
+2016-02-27 02:34:21,469 INFO    epoch,4300, average_loss,178.998461914
+2016-02-27 02:34:31,805 INFO    epoch,4400, average_loss,178.85324707
+2016-02-27 02:34:42,133 INFO    epoch,4500, average_loss,178.708764648
+2016-02-27 02:34:52,462 INFO    epoch,4600, average_loss,178.559790039
+2016-02-27 02:35:02,799 INFO    epoch,4700, average_loss,178.404919434
+2016-02-27 02:37:27,076 INFO    ------------------------------------------------
+2016-02-27 02:37:27,076 INFO    batch_sise:80, epoch_size:30000, alpha:1e-06
+2016-02-27 02:37:27,079 INFO    creating input_data...
+2016-02-27 02:35:44,107 INFO    epoch,5100, average_loss,177.822998047
+2016-02-27 02:35:54,435 INFO    epoch,5200, average_loss,177.535217285
+2016-02-27 02:36:19,792 INFO    ------------------------------------------------
+2016-02-27 02:36:19,792 INFO    batch_sise:40, epoch_size:3000, alpha:1e-06
+2016-02-27 02:36:19,793 INFO    creating input_data...
+2016-02-27 02:36:32,358 INFO    ------------------------------------------------
+2016-02-27 02:36:32,359 INFO    batch_sise:40, epoch_size:3000, alpha:1e-06
+2016-02-27 02:36:32,360 INFO    creating input_data...
+2016-02-27 02:40:17,364 INFO    creating cnn...
+2016-02-27 02:40:18,416 INFO    training dataset...
+2016-02-27 02:40:44,495 INFO    epoch,100, average_loss,1066.8375
+2016-02-27 02:41:05,038 INFO    epoch,200, average_loss,1066.8375
+2016-02-27 02:41:25,654 INFO    epoch,300, average_loss,1066.8375
+epoch,100, average_loss,3395.82226562
+2016-02-27 02:39:24,509 INFO    epoch,200, average_loss,712.351464844
+2016-02-27 02:41:46,757 INFO    epoch,400, average_loss,1066.8375
+2016-02-27 02:42:07,867 INFO    epoch,500, average_loss,1066.8375
+5771484
+2016-02-27 02:39:55,201 INFO    epoch,500, average_loss,279.122729492
+2016-02-27 02:42:28,734 INFO    epoch,600, average_loss,1066.8375
+297
+2016-02-27 02:40:15,676 INFO    epoch,700, average_loss,277.763916016
+2016-02-27 02:40:25,908 INFO    epoch,800, average_loss,277.448657227
+2016-02-27 02:40:36,149 INFO    epoch,900, average_loss,277.1010982016-02-27 02:43:10,492 INFO    epoch,800, average_loss,1066.8375
+81103516
+2016-02-27 02:40:56,638 INFO    epoch,1100, average_loss,276.228051758
+2016-02-27 02:41:06,879 INFO    epoch,1200, average_loss,275.770068359
+2016-02-27 02:41:17,126 INFO    epoch,1300, average_loss,275.305419922
+2016-02-27 02:41:27,373 INFO    epoch,1400, average_loss,274.747021484
+2016-02-27 02:41:37,613 INFO    epoch,1500, average_loss,274.232861328
+2016-02-27 02:41:47,862 INFO    epoch,1600, average_loss,273.7890625
+2016-02-27 02:41:58,114 INFO    epoch,1700, average_loss,273.370996094
+2016-02-27 02:42:08,362 INFO    epoch,1800, average_loss,272.953125
+------------
+2016-02-27 02:44:21,127 INFO    batch_sise:80, epoch_size:3000, alpha:1e-07
+2016-02-27 02:44:21,129 INFO    creating input_data...
+2016-02-27 02:42:18,607 INFO    epoch,1900, average_loss,272.532714844
+2016-02-27 02:42:28,857 INFO    epoch,2000, average_loss,272.137695312
+2016-02-27 02:42:39,103 INFO    epoch,2100, average_loss,271.732641602
+2016-02-27 02:42:49,350 INFO    epoch,2200, average_loss,271.337060547
+2016-02-27 02:42:59,600 INFO    epoch,2300, average_loss,270.952392578
+, alpha:1e-07
+2016-02-27 02:45:06,261 INFO    creating input_data...
+2016-02-27 02:43:09,941 INFO    epoch,2400, average_loss,270.572216797
+2016-02-27 02:43:20,289 INFO    epoch,2500, average_loss,270.197290039
+2016-02-27 02:43:30,637 INFO    epoch,2600, average_loss,269.826318359
+2016-02-27 02:43:40,956 INFO    epoch,2700, average_loss,269.45625
+2016-02-27 02:43:51,289 INFO    epoch,2800, average_loss,269.086523437
+2016-02-27 02:44:01,541 INFO    epoch,2900, average_loss,268.723730469
+2016-02-27 02:44:11,898 INFO    epoch,3000, average_loss,268.361181641
+2016-02-27 02:44:11,931 INFO    test average_loss,349150.5
+2016-02-27 02:44:11,931 INFO    end:2016-02-27 02:44:11
+2016-02-27 02:44:11,931 INFO    elapsed_time459.573015928[sec]
+2016-02-27 02:44:43,109 INFO    ------------------------------------------------
+2016-02-27 02:44:43,109 INFO    batch_sise:10, epoch_size:3000, alpha:5e-05
+2016-02-27 02:44:43,110 INFO    creating input_data...
+2016-02-27 02:47:55,653 INFO    creating cnn...
+2016-02-27 02:47:56,745 INFO    training dataset...
+2016-02-27 02:48:22,578 INFO    epoch,100, average_loss,1066.8375
+2016-02-27 02:48:43,131 INFO    epoch,200, average_loss,1066.8375
+2016-02-27 02:49:03,764 INFO    epoch,300, average_loss,1066.8375
+2016-02-27 02:47:09,125 INFO    creating cnn...
+2016-02-27 02:47:09,887 INFO    training dataset...
+2016-02-27 02:49:27,733 INFO    ------------------------------------------------
+2016-02-27 02:49:27,733 INFO    batch_sise:10, epoch_size:3000, alpha:1e-08
+2016-02-27 02:49:27,736 INFO    creating input_data...
+7:29,755 INFO    epoch,400, average_loss,1126.5
+2016-02-27 02:47:33,391 INFO    epoch,500, average_loss,1129.45
+2016-02-27 02:47:37,082 INFO    epoch,600, average_loss,1126.5
+2016-02-27 02:47:40,736 INFO    epoch,700, average_loss,1129.45
+2016-02-27 02:47:44,407 INFO    epoch,800, average_loss,1126.5
+2016-02-27 02:47:48,050 INFO    epoch,900, average_loss,1129.45
+2016-02-27 02:47:51,755 INFO    epoch,1000, average_loss,1126.5
+2016-02-27 02:47:55,415 INFO    epoch,1100, average_loss,1129.45
+2016-02-27 02:47:59,075 INFO    epoch,1200, average_loss,1126.5
+2016-02-27 02:48:02,740 INFO    epoch,1300, average_loss,1129.45
+2016-02-27 02:48:40,162 INFO    ------------------------------------------------
+2016-02-27 02:48:40,162 INFO    batch_sise:10, epoch_size:3000, alpha:1e-05
+2016-02-27 02:48:40,163 INFO    creating input_data...
+2016-02-27 02:52:17,862 INFO    creating cnn...
+2016-02-27 02:52:18,916 INFO    training dataset...
+2016-02-27 02:52:23,391 INFO    epoch,100, average_loss,1098.92783203
+2016-02-27 02:52:27,536 INFO    epoch,200, average_loss,1126.5
+2016-02-27 02:52:31,695 INFO    epoch,300, average_loss,1098.62851563
+2016-02-27 02:52:35,838 INFO    epoch,400, average_loss,1126.5
+2016-02-27 02:52:39,983 INFO    epoch,500, average_loss,1098.48535156
+2016-02-27 02:53:08,513 INFO    ------------------------------------------------
+2016-02-27 02:53:08,513 INFO    batch_sise:80, epoch_size:3000, alpha:1e-09
+2016-02-27 02:53:08,516 INFO    creating input_data...
+ average_loss,15809.5046875
+2016-02-27 02:51:18,178 INFO    epoch,300, average_loss,303.013989258
+2016-02-27 02:51:21,835 INFO    epoch,400, average_loss,468.188330078
+2016-02-27 02:51:25,508 INFO    epoch,500, average_loss,326.479296875
+2016-02-27 02:51:29,210 INFO    epoch,600, average_loss,301.339550781
+2016-02-27 02:51:32,865 INFO    epoch,700, average_loss,356.374707031
+2016-02-27 02:51:36,547 INFO    epoch,800, average_loss,267.672851562
+2016-02-27 02:51:40,205 INFO    epoch,900, average_loss,353.258642578
+2016-02-27 02:51:43,843 INFO    epoch,1000, average_loss,237.722998047
+2016-02-27 02:51:47,549 INFO    epoch,1100, average_loss,347.799414062
+2016-02-27 02:51:51,201 INFO    epoch,1200, average_loss,242.369067383
+2016-02-27 02:51:54,885 INFO    epoch,1300, average_loss,335.612768555
+2016-02-27 02:51:58,569 INFO    epoch,1400, average_loss,227.754711914
+2016-02-27 02:52:02,259 INFO    epoch,1500, average_loss,328.732470703
+2016-02-27 02:52:05,923 INFO    epoch,1600, average_loss,234.409838867
+2016-02-27 02:52:09,572 INFO    epoch,1700, average_loss,317.774584961
+2016-02-27 02:52:13,267 INFO    epoch,1800, average_loss,229.199951172
+2016-02-27 02:52:16,956 INFO    epoch,1900, average_loss,312.280126953
+2016-02-27 02:52:20,641 INFO    epoch,2000, average_loss,218.60144043
+2016-02-27 02:52:24,311 INFO    epoch,2100, average_loss,307.694287109
+2016-02-27 02:52:27,982 INFO    epoch,2200, average_loss,225.731494141
+2016-02-27 02:52:31,649 INFO    epoch,2300, average_loss,299.561328125
+2016-02-27 02:52:35,286 INFO    epoch,2400, average_loss,219.566479492
+2016-02-27 02:52:39,002 INFO    epoch,2500, average_loss,296.31027832
+2016-02-27 02:52:42,678 INFO    epoch,2600, average_loss,223.130371094
+2016-02-27 02:52:46,338 INFO    epoch,2700, average_loss,288.756884766
+2016-02-27 02:52:49,990 INFO    epoch,2800, average_loss,219.775463867
+2016-02-27 02:52:53,642 INFO    epoch,2900, average_loss,285.788696289
+2016-02-27 02:52:57,313 INFO    epoch,3000, average_loss,205.291479492
+2016-02-27 02:52:57,322 INFO    test average_loss,516771.2
+2016-02-27 02:52:57,322 INFO    end:2016-02-27 02:52:57
+2016-02-27 02:52:57,322 INFO    elapsed_time257.160222054[sec]
+2016-02-27 02:56:01,880 INFO    creating cnn...
+2016-02-27 02:56:02,949 INFO    training dataset...
+,742 INFO    batch_sise:10, epoch_size:3000, alpha:5e-06
+2016-02-27 02:53:28,743 INFO    creating input_data...
+2016-02-27 02:56:23,713 INFO    epoch,100, average_loss,787617.75
+2016-02-27 02:56:44,337 INFO    epoch,200, average_loss,787604.45
+2016-02-27 02:57:05,012 INFO    epoch,300, average_loss,787595.1
+2016-02-27 02:55:55,258 INFO    creating cnn...
+2016-02-27 02:55:56,029 INFO    training dataset...
+,619 INFO    batch_sise:10, epoch_size:3000, alpha:1e-06
+2016-02-27 02:57:30,622 INFO    creating input_data...
+2016-02-27 02:56:00,031 INFO    epoch,100, average_loss,1129.45
+2016-02-27 02:56:03,673 INFO    epoch,200, average_loss,1126.5
+2016-02-27 02:56:07,318 INFO    epoch,300, average_loss,1129.45
+2016-02-27 02:56:10,964 INFO    epoch,400, average_loss,1126.5
+2016-02-27 02:56:14,585 INFO    epoch,500, average_loss,1129.45
+2016-02-27 02:56:18,246 INFO    epoch,600, average_loss,1126.5
+2016-02-27 02:56:21,892 INFO    epoch,700, average_loss,1129.45
+2016-02-27 03:00:20,619 INFO    creating cnn...
+2016-02-27 03:00:21,748 INFO    training dataset...
+2016-02-27 03:00:26,525 INFO    epoch,100, average_loss,85207.275
+2016-02-27 03:00:30,663 INFO    epoch,200, average_loss,170187379.2
+2016-02-27 03:00:34,816 INFO    epoch,300, average_loss,70585.675
+2016-02-27 03:00:38,970 INFO    epoch,400, average_loss,167294246.4
+2016-02-27 03:00:43,113 INFO    epoch,500, average_loss,68518.3
+2016-02-27 03:00:47,263 INFO    epoch,600, average_loss,164981043.2
+2016-02-27 03:00:51,409 INFO    epoch,700, average_loss,66860.9625
+2016-02-27 03:00:55,569 INFO    epoch,800, average_loss,163005478.4
+2016-02-27 03:00:59,733 INFO    epoch,900, average_loss,65444.4875
+2016-02-27 03:01:03,888 INFO    epoch,1000, average_loss,161254067.2
+2016-02-27 03:01:08,068 INFO    epoch,1100, average_loss,64190.1375
+2016-02-27 03:01:12,245 INFO    epoch,1200, average_loss,159667660.8
+2016-02-27 03:01:16,427 INFO    epoch,1300, average_loss,63048.65
+2016-02-27 03:01:20,600 INFO    epoch,1400, average_loss,158207257.6
+2016-02-27 03:01:24,779 INFO    epoch,1500, average_loss,62003.975
+2016-02-27 03:01:28,952 INFO    epoch,1600, average_loss,156825753.6
+2016-02-27 03:01:33,140 INFO    epoch,1700, average_loss,61034.0625
+2016-02-27 03:01:37,322 INFO    epoch,1800, average_loss,155541926.4
+2016-02-27 03:01:41,512 INFO    epoch,1900, average_loss,60128.18125
+2016-02-27 03:01:45,694 INFO    epoch,2000, average_loss,154341785.6
+2016-02-27 03:01:49,869 INFO    epoch,2100, average_loss,59277.4625
+2016-02-27 03:01:54,052 INFO    epoch,2200, average_loss,153206323.2
+2016-02-27 03:01:58,245 INFO    epoch,2300, average_loss,58473.7875
+2016-02-27 03:02:02,429 INFO    epoch,2400, average_loss,152124761.6
+2016-02-27 03:02:06,606 INFO    epoch,2500, average_loss,57707.025
+2016-02-27 03:02:10,795 INFO    epoch,2600, average_loss,151072140.8
+2016-02-27 03:02:14,974 INFO    epoch,2700, average_loss,56978.94375
+2016-02-27 03:02:19,147 INFO    epoch,2800, average_loss,150061888.0
+2016-02-27 03:02:23,328 INFO    epoch,2900, average_loss,56287.6125
+2016-02-27 03:02:27,529 INFO    epoch,3000, average_loss,149099814.4
+2016-02-27 03:02:27,540 INFO    test average_loss,90479494.4
+2016-02-27 03:02:27,540 INFO    end:2016-02-27 03:02:27
+2016-02-27 03:02:27,540 INFO    elapsed_time296.921901941[sec]

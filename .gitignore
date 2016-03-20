@@ -1,0 +1,6 @@
+#directory
+/image
+/target
+
+#file type
+#*.txt
