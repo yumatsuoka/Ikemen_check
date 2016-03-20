@@ -1,4 +1,4 @@
-#IkemenCheck:Regression with CNN
+#IkemenCheck:Regression with CNN(Convolutional Neural Networks)
 ##Requirements
 -Python 2.x (checked Python 2.7.6)
 
