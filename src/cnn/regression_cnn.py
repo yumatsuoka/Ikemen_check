@@ -51,7 +51,6 @@ class C1fc1(Cnn):#cnnを継承
         self.b_fc1 = self.bias_variable([1])
 
     def forward(self):#@override
-        """NNのforword処理を行う関数"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
@@ -71,7 +70,6 @@ class C3fc1(Cnn):#Cnnを継承
         self.b_fc2 = self.bias_variable([1])
 
     def forward(self):#@override
-        """NN$Nforword=hM}$r9T$&4X?t"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
@@ -97,7 +95,6 @@ class C3fc2(Cnn):#Cnnを継承
         self.b_fc2 = self.bias_variable([1])
 
     def forward(self):#@override
-        """NN$Nforword=hM}$r9T$&4X?t"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
@@ -125,7 +122,6 @@ class C4fc1(Cnn):#Cnnを継承
         self.b_fc1 = self.bias_variable([1])
 
     def forward(self):#@override
-        """NN$Nforword=hM}$r9T$&4X?t"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
@@ -155,7 +151,6 @@ class C4fc2(Cnn):#Cnnを継承
         self.b_fc2 = self.bias_variable([1])
 
     def forward(self):#@override
-        """NN$Nforword=hM}$r9T$&4X?t"""
         x_image = tf.reshape(x, [-1, image_size, image_size, 3])
         h_conv1 = tf.nn.relu(self.conv2d(x_image, self.w_conv1) + self.b_conv1)
         h_pool1 = self.max_pool_2x2(h_conv1)
@@ -180,9 +175,6 @@ if __name__=='__main__':
     data_list = "/home/yuma/programing/ikemen_check/target/man_target.csv"
     data_dir = "/home/yuma/programing/ikemen_check/image/divide_sex/man/resize/"
     
-    #dropout select
-    dropout = False
-
     batch_size = 20
     test_data_num = 2000
     epoch_size = 3000
@@ -213,7 +205,11 @@ if __name__=='__main__':
     print("creating cnn...")
     logging.info("createing cnn...")
     #cnnのオブジェクトを作成###########
-    cnn = Cnn()
+    cnn = C1fc1()
+    #cnn = C3fc1()
+    #cnn = C3fc2()
+    #cnn = C4fc1()
+    #cnn = C4fc2()
     ##################################
     
     #loss
@@ -228,16 +224,13 @@ if __name__=='__main__':
     logging.info("training dataset...")
     for i in range(1, epoch_size+1):
         batch_x, batch_y = input_data.next_batch()
-        #train_step.run(feed_dict={x: batch_x, y_: batch_y })
         train_step.run(feed_dict={x: batch_x, y_: batch_y, keep_prob: 1.0})
             
         if i%100 == 0:
-            #train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y})/batch_size
             train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y, keep_prob: 1.0})/batch_size
             print("epoch:%d average_loss:%f"%(i, train_output))
             logging.info("epoch,"+str(i)+", average_loss,"+str(train_output))
     #test
-    #test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target })/batch_size 
     test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target, keep_prob: 1.0})/batch_size
     ###########
     print("test average_loss:%f"%test_output)
