@@ -4,8 +4,6 @@
 """
 CNNを作成した。get_image_tensorのオブジェクトを作成してデータセットを読み込む。
 読み込んだデータセットをCNNに投げる。
-dropoutに関する部分が未完成。forwardの全結合層のあとにdropoutを実行する部分を実装
-h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 """
 
 from __future__ import absolute_import
@@ -25,7 +23,7 @@ class Cnn:
 
     def forward(self):
         """NNのforword処理を行う関数"""
-        return
+        pass
 
     def weight_variable(self, shape):
         """重みに使う変数を初期化する関数"""
@@ -49,8 +47,8 @@ class C1fc1(Cnn):#cnnを継承
     def __init__(self):
         self.b_conv1 = self.bias_variable([32])
         self.w_conv1 = self.weight_variable([5, 5, 3, 32])
-        self.w_fc1 = self.weight_variable([64 * 64 * 32, 1024])
-        self.b_fc1 = self.bias_variable([1024])
+        self.w_fc1 = self.weight_variable([64 * 64 * 32, 1])
+        self.b_fc1 = self.bias_variable([1])
 
     def forward(self):#@override
         """NNのforword処理を行う関数"""
@@ -109,7 +107,8 @@ class C3fc2(Cnn):#Cnnを継承
         h_pool3 = self.max_pool_2x2(h_conv3)
         h_pool3_flat = tf.reshape(h_pool4, [-1, 16 * 16 * 128])
         h_fc1 = tf.nn.relu(tf.matmul(h_pool3_flat, self.w_fc1) + self.b_fc1)
-        h_fc2 = tf.nn.relu(tf.matmul(h_fc1, self.w_fc2) + self.b_fc2)
+        h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
+        h_fc2 = tf.nn.relu(tf.matmul(h_fc1_drop, self.w_fc2) + self.b_fc2)
         return h_fc2
 
 class C4fc1(Cnn):#Cnnを継承
@@ -168,7 +167,8 @@ class C4fc2(Cnn):#Cnnを継承
         h_pool4 = self.max_pool_2x2(h_conv4)
         h_pool4_flat = tf.reshape(h_pool4, [-1, 8 * 8 * 256])
         h_fc1 = tf.nn.relu(tf.matmul(h_pool4_flat, self.w_fc1) + self.b_fc1)
-        h_fc2 = tf.nn.relu(tf.matmul(h_fc1, self.w_fc2) + self.b_fc2)
+        h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
+        h_fc2 = tf.nn.relu(tf.matmul(h_fc1_drop, self.w_fc2) + self.b_fc2)
         return h_fc2
 
 if __name__=='__main__':
@@ -202,11 +202,7 @@ if __name__=='__main__':
     #外部からデータを入れる変数を作成
     x = tf.placeholder("float", shape=[None, 3 * image_size * image_size])
     y_ = tf.placeholder("float", shape=[None, 1])
-
-    ##########dropout
-    #if dropout:
-    #    keep_prob = tf.placeholder("float")
-    ##########
+    keep_prob = tf.placeholder("float")
     
     print("creating input_data...")
     logging.info("creating input_data...")
@@ -232,25 +228,17 @@ if __name__=='__main__':
     logging.info("training dataset...")
     for i in range(1, epoch_size+1):
         batch_x, batch_y = input_data.next_batch()
-        train_step.run(feed_dict={x: batch_x, y_: batch_y })
-        ###########
-        #if dropout:
-        #    train_step.run(feed_dict={x: batch_x, y_: batch_y, keep_prob: 0.5})
-        ##########
+        #train_step.run(feed_dict={x: batch_x, y_: batch_y })
+        train_step.run(feed_dict={x: batch_x, y_: batch_y, keep_prob: 1.0})
             
         if i%100 == 0:
-            train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y})/batch_size
-            #########
-            #if dropout:
-            #    train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y, keep_prob: 1.0})/batch_size
-            #########
+            #train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y})/batch_size
+            train_output = sess.run(loss, feed_dict={x: batch_x, y_: batch_y, keep_prob: 1.0})/batch_size
             print("epoch:%d average_loss:%f"%(i, train_output))
             logging.info("epoch,"+str(i)+", average_loss,"+str(train_output))
     #test
-    test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target })/batch_size 
-    ############
-    #if dropout:
-    #    test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target, keep_prob: 1.0})/batch_size
+    #test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target })/batch_size 
+    test_output = sess.run(loss, feed_dict={x: input_data.test_data, y_: input_data.test_target, keep_prob: 1.0})/batch_size
     ###########
     print("test average_loss:%f"%test_output)
     logging.info("test average_loss,"+str(test_output))
