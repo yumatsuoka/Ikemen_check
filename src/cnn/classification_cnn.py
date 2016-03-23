@@ -25,7 +25,7 @@ class Cnn:
     def forward(self):
         """NNのforward処理を行う関数"""
         pass
-    def weight_variable(self):
+    def weight_variable(self, shape):
         """重みに使う変数を初期化する関数"""
         initial = tf.truncated_normal(shape, stddev=0.1)
         return tf.Variable(initial)
@@ -239,15 +239,12 @@ if __name__=='__main__':
     logging.info("---------------------------------------------------")
 
     #parameters
-    data_list = "/home/yuma/programing/ikemen_check/target/man_target.csv"
-    data_dir = "/home/yuma/programing/ikemen_check/image/divide_sex/man/resize/"
-    
-    #dropout select
-    dropout = False
+    data_list = "/home/yuma/programing/github/ikemen_check/target/bijo_target.csv"
+    data_dir = "/home/yuma/programing/github/ikemen_check/image/woman/"
 
     batch_size = 20
-    test_data_num = 2000
-    epoch_size = 3000
+    test_data_num = 3540
+    epoch_size = 300
     image_size = 128
     alpha = 1e-4
     
@@ -286,7 +283,7 @@ if __name__=='__main__':
     
     #loss クラスタリングならクロスエントロピー使ったほうが学習が早い
     #loss = tf.reduce_sum(tf.pow(y_ - cnn.forward(), 2) * 0.5)
-    loss = -tf.reduce_sum(y_ * tf.log(cnn.forward())
+    loss = -tf.reduce_sum(y_ * tf.log(cnn.forward()))
     train_step = tf.train.AdagradOptimizer(alpha).minimize(loss)
     correct_prediction = tf.equal(tf.argmax(cnn.forward(), 1), tf.argmax(y_, 1))
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))

@@ -3,4 +3,4 @@
 /target
 
 #file type
-#*.txt
+*.pyc
