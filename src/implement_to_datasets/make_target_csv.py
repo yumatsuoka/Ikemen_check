@@ -28,6 +28,6 @@ for i in target_flag:
         output_list.append(temp)
 
 csv_data = pd.DataFrame(output_list)
-#header$B:o=|$rJ]B8;~$K%*%W%7%g%sDI2C(B
+#header削除を保存時にオプション追加
 csv_data.to_csv("bijo_target.csv", header=False, index=False)
     
