@@ -1,6 +1,7 @@
 #directory
 /image
 /target
+/test/2*
 
 #file type
 *.pyc
