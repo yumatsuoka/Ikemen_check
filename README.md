@@ -1,7 +1,7 @@
 #IkemenCheck:Regression or Classification with CNN
 ##Abstract
 regression or classification with Convolutional Neural Networks using TensorFlow.  
-creating datasets with OpenCV.  
+
 In 'src/cnn/.', "get_image_tensor.py" is to make a object of images dataset and classification.py and regression_cnn are CNNs codes.  
 In 'src/implement_to_datasets', "*.sh" or "*.py" are to transform images.  
 
