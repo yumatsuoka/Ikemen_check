@@ -1,14 +1,22 @@
-#IkemenCheck:Regression with CNN
+#IkemenCheck:Regression or Classification with CNN
 ##Abstract
-regression with Convolutional Neural Networks using TensorFlow.
-creating datasets with OpenCV.
-"get_image_tensor.py" is to make a object of dataset from images
-"cnn*.py" is cnn source codes
-I have to refactoring "CNN using TensorFlow" source codes.
+regression or classification with Convolutional Neural Networks using TensorFlow.  
+creating datasets with OpenCV.  
+In 'src/cnn/.', "get_image_tensor.py" is to make a object of images dataset and classification.py and regression_cnn are CNNs codes.  
+In 'src/implement_to_datasets', "*.sh" or "*.py" are to transform images.  
 
 ##Requirements
--Python 2.x (checked Python 2.7.6)
+Implement CNNs  
+-Python 2.x (checked Python 2.7.6)  
+-TensorFlow(checked TensorFlow 0.6.0)  
+-Pillow(checked Pillow 3.0.0)  
+-numpy(checked numpy 1.11.0)  
+-pandas(checked pandas 0.17.1)  
+
+Implement transforming images  
+-OpenCV(checked OpenCV 3.0)  
+-pandas(checked pandas 0.17.1)  
 
 ##How to use
-prepare datasets(.jpg) and target_data(.csv)
-python cnn***.py
+-prepare datasets(.jpg) and target_data(.csv) with 'src/implement_to_datasets/.'scripts  
+-python classification.py or regression_cnn.py
